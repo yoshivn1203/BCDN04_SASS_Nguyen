@@ -9,8 +9,9 @@ header {
   }
   .navbar {
     .logo__mobile {
-      @include screenMin(1199px) {
-        display: none;
+      display: none;
+      @include responsive('extra-large-down') {
+        display: block;
       }
       margin-left: 20px;
       margin-right: auto;
@@ -23,9 +24,8 @@ header {
       padding: 0;
       img {
         width: 80px;
-        display: none;
-        @include screenMin(1199px) {
-          display: block;
+        @include responsive('extra-large-down') {
+          display: none;
         }
       }
     }
@@ -76,39 +76,21 @@ header {
       }
       &.show {
         .collapse__content {
-          z-index: 99;
-          overflow-y: auto;
-          width: 30%;
           display: block;
-          .navbar-nav .nav-item {
-            line-height: 48px;
-            &.active:after {
-              display: none;
-            }
-            &:hover:after {
-              display: none;
-            }
-          }
-          .nav__info {
-            display: inline-block;
-            .nav__phone {
-              margin-left: 0;
-            }
-          }
         }
       }
     }
     .nav__info {
       display: flex;
+      justify-content: center;
       align-items: center;
       .nav__phone {
         cursor: pointer;
         @include styleText($fs-cta, white, $fw-cta);
-        padding: 12px 20.25px;
+        padding: 12px 23px;
         margin: 6px;
       }
       .nav__social {
-        font-size: 13.586px;
         font-weight: 400;
         .fab {
           cursor: pointer;
@@ -118,6 +100,18 @@ header {
             color: $color-sub;
           }
         }
+      }
+    }
+  }
+}
+
+//responsive
+@include responsive('extra-large-down') {
+  header {
+    #navbarNavAltMarkup {
+      .nav-link {
+        text-align: center;
+        margin-right: 0;
       }
     }
   }

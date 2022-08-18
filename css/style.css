@@ -39,13 +39,14 @@ header {
   }
 }
 header .navbar .logo__mobile {
+  display: none;
   margin-left: 20px;
   margin-right: auto;
   width: 48px;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   header .navbar .logo__mobile {
-    display: none;
+    display: block;
   }
 }
 header .navbar .logo__mobile img {
@@ -56,11 +57,10 @@ header .navbar .navbar-brand {
 }
 header .navbar .navbar-brand img {
   width: 80px;
-  display: none;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   header .navbar .navbar-brand img {
-    display: block;
+    display: none;
   }
 }
 header .navbar .navbar-collapse {
@@ -112,28 +112,11 @@ header .navbar .navbar-collapse .collapse__content .navbar-nav .nav-item:hover:a
   transform: scale(1.5);
 }
 header .navbar .navbar-collapse.show .collapse__content {
-  z-index: 99;
-  overflow-y: auto;
-  width: 30%;
   display: block;
-}
-header .navbar .navbar-collapse.show .collapse__content .navbar-nav .nav-item {
-  line-height: 48px;
-}
-header .navbar .navbar-collapse.show .collapse__content .navbar-nav .nav-item.active:after {
-  display: none;
-}
-header .navbar .navbar-collapse.show .collapse__content .navbar-nav .nav-item:hover:after {
-  display: none;
-}
-header .navbar .navbar-collapse.show .collapse__content .nav__info {
-  display: inline-block;
-}
-header .navbar .navbar-collapse.show .collapse__content .nav__info .nav__phone {
-  margin-left: 0;
 }
 header .navbar .nav__info {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 header .navbar .nav__info .nav__phone {
@@ -141,11 +124,10 @@ header .navbar .nav__info .nav__phone {
   font-size: 13.5px;
   color: white;
   font-weight: 500;
-  padding: 12px 20.25px;
+  padding: 12px 23px;
   margin: 6px;
 }
 header .navbar .nav__info .nav__social {
-  font-size: 13.586px;
   font-weight: 400;
 }
 header .navbar .nav__info .nav__social .fab {
@@ -157,6 +139,12 @@ header .navbar .nav__info .nav__social .fab:hover {
   color: #b61984;
 }
 
+@media screen and (max-width: 1199.98px) {
+  header #navbarNavAltMarkup .nav-link {
+    text-align: center;
+    margin-right: 0;
+  }
+}
 .cta {
   color: white;
   box-shadow: 0 0 0 3em #b61984 inset;
