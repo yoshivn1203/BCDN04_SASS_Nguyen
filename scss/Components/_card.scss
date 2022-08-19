@@ -1,0 +1,10 @@
+.cardMember {
+  font-family: $ff-main;
+  border-radius: 10px;
+  overflow: hidden;
+  background: $color-white;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  }
+}
