@@ -12,8 +12,9 @@ footer {
     @include styleText($fs-footer-link, $color-white, $fw-footer-link);
 
     .footer__col {
-      @media screen and (min-width: 1199px) {
-        padding: 0 40px;
+      padding: 0 40px;
+      @include responsive('extra-large-down') {
+        padding: 0 15px;
       }
       .footer__headline {
         font-family: 'Montserrat', sans-serif;
@@ -41,8 +42,8 @@ footer {
       .footer__links {
         margin-top: -10px;
         .footer__link {
+          position: relative;
           padding: 10px 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
           a {
             color: white;
             text-decoration: none;
@@ -51,6 +52,15 @@ footer {
               opacity: 0.8;
             }
           }
+        }
+        .footer__link::after {
+          content: '';
+          position: absolute;
+          width: 30%;
+          height: 0.1px;
+          background: rgb(46, 46, 46);
+          left: 0;
+          bottom: 5px;
         }
       }
       .footer__subscribe {
