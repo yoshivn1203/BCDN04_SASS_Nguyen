@@ -8,25 +8,23 @@ footer {
   .container {
     padding-top: 120px;
     padding-bottom: 120px;
-    color: white;
-    font-size: 13.5px;
     font-family: 'Robotto', sans-serif;
+    @include styleText($fs-footer-link, $color-white, $fw-footer-link);
+
     .footer__col {
       @media screen and (min-width: 1199px) {
         padding: 0 40px;
       }
-      .footer__title {
+      .footer__headline {
         font-family: 'Montserrat', sans-serif;
-        font-size: 23.25px;
-        font-weight: 700;
-        // color: white;
+        @include styleText($fs-footer-headline, $color-white, $fw-footer-headline);
         line-height: 27.9px;
         margin-bottom: 30px;
       }
-      .footer__contact__item {
+      .footer__info__item {
         align-items: center;
         margin-bottom: 15px;
-        p {
+        span {
           margin-left: 10.8px;
         }
       }

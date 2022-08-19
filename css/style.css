@@ -161,14 +161,13 @@ header .navbar .navbar-collapse .collapse__content .navbar-nav .social__icons .f
   width: 100% !important;
   background: transparent;
   box-shadow: 0 0 0 3em #ffffff inset;
-  padding: 12px 23px;
+  padding: 14px 23px;
   border: none;
   border-radius: 50px;
   letter-spacing: 0.08rem;
   font-size: 12px;
   color: #181818;
   font-weight: 600;
-  margin: 6px;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   transition: all 300ms ease;
 }
@@ -248,27 +247,29 @@ footer {
 footer .container {
   padding-top: 120px;
   padding-bottom: 120px;
-  color: white;
-  font-size: 13.5px;
   font-family: "Robotto", sans-serif;
+  font-size: 13.5px;
+  color: #ffffff;
+  font-weight: 500;
 }
 @media screen and (min-width: 1199px) {
   footer .container .footer__col {
     padding: 0 40px;
   }
 }
-footer .container .footer__col .footer__title {
+footer .container .footer__col .footer__headline {
   font-family: "Montserrat", sans-serif;
   font-size: 23.25px;
+  color: #ffffff;
   font-weight: 700;
   line-height: 27.9px;
   margin-bottom: 30px;
 }
-footer .container .footer__col .footer__contact__item {
+footer .container .footer__col .footer__info__item {
   align-items: center;
   margin-bottom: 15px;
 }
-footer .container .footer__col .footer__contact__item p {
+footer .container .footer__col .footer__info__item span {
   margin-left: 10.8px;
 }
 footer .container .footer__col .footer__social {

@@ -13,9 +13,8 @@
 
 .btn-footer {
   width: 100% !important;
-  @include styleButton(transparent, $sha-footer, $pd-1, $pd-2, none, $bd-1, $ls-2);
+  @include styleButton(transparent, $sha-footer, $pd-3, $pd-2, none, $bd-1, $ls-2);
   @include styleText($fs-btn-2, $color-main, $fw-btn-2);
-  margin: $mg-1;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   transition: all 300ms ease;
   &:hover {

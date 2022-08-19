@@ -9,16 +9,16 @@
     flex-flow: column nowrap;
     justify-content: center;
     p {
-      @include styleText(16.5px, $color-second, $fw-main);
+      @include styleText($fs-banner-2, $color-second, $fw-main);
       margin-bottom: 8.25px;
       @include responsive('extra-large-down') {
-        font-size: 14.25px;
+        font-size: $fs-banner-1;
       }
     }
     h1 {
-      @include styleText(57px, $color-main, 700);
+      @include styleText($fs-banner-4, $color-main, 700);
       @include responsive('extra-large-down') {
-        font-size: 47px;
+        font-size: $fs-banner-3;
       }
     }
   }
