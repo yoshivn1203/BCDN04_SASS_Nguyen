@@ -1,0 +1,97 @@
+#course {
+  padding-top: 60px;
+  position: relative;
+  .container {
+    max-width: 1000px;
+    padding: 0;
+    .course__img {
+      img {
+        display: block;
+        margin: 0;
+        line-height: 0;
+        max-width: 100%;
+        height: auto;
+        border-radius: 0;
+      }
+      @include responsive('large') {
+        margin: 0 auto;
+        padding: 0 30px;
+      }
+    }
+    .course__form {
+      font-family: $ff-main;
+      .submit__form {
+        max-width: 500px;
+        padding: 0 25px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+        .form__title {
+          @include styleText($fs-form-title, $color-main, $fw-form-title);
+          line-height: 45px;
+        }
+        .form__input {
+          margin-top: 50px;
+          div {
+            position: relative;
+            i {
+              position: absolute;
+              top: 15px;
+              left: 28px;
+              line-height: 1;
+              color: $color-second;
+            }
+            input,
+            select {
+              border-radius: 50px;
+              border: rgba(0, 0, 0, 0.1) solid 1px;
+              outline: none;
+              font-family: $ff-second;
+              width: 100%;
+              background: transparent;
+              line-height: 1;
+              display: block;
+              color: inherit;
+              padding: 12px 12px 12px 42px !important;
+              font-size: 12px !important;
+              height: 44.5px;
+              margin-bottom: 15px;
+            }
+            textarea {
+              font-family: $ff-second;
+              padding: 12px 12px 12px 42px !important;
+              height: 90px;
+              line-height: 1.5;
+              font-size: 12px !important;
+              border-radius: 20px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              width: 100%;
+            }
+          }
+        }
+        .form__btn {
+          padding-top: 35px;
+          margin-bottom: 65px;
+          .btn-form {
+            @include responsive('medium') {
+              width: 100%;
+            }
+          }
+        }
+        @include responsive('large') {
+          width: 90%;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+      }
+      @include responsive('large') {
+        margin-top: 50px;
+      }
+    }
+  }
+  .bottom__pattern {
+    @include backgroundPattern('', 0);
+    z-index: -1;
+  }
+}

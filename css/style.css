@@ -73,6 +73,29 @@ h6 {
   outline: none;
 }
 
+.btn-form {
+  background: transparent;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 50px;
+  letter-spacing: 0.03rem;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 6px;
+  transition: all 300ms ease;
+}
+.btn-form:hover {
+  background: transparent;
+  box-shadow: 0 0 0 1px #b61984 inset;
+  border-color: #b61984;
+  color: #b61984;
+}
+.btn-form:focus {
+  outline: none;
+}
+
 .cardMember {
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
@@ -247,55 +270,168 @@ header .navbar .navbar-collapse .collapse__content .navbar-nav .social__icons .f
   display: block;
 }
 
-#team {
+#members {
   background-color: #dcd1f3;
   padding-top: 30px;
   position: relative;
 }
-#team .team__wrapper {
+#members .team__wrapper {
   z-index: 1;
 }
-#team .team__wrapper .cardMember .member__img {
+#members .team__wrapper .cardMember .member__img {
   overflow: hidden;
 }
-#team .team__wrapper .cardMember .member__img:hover img {
+#members .team__wrapper .cardMember .member__img:hover img {
   transform: scale(1.05);
 }
-#team .team__wrapper .cardMember .member__img img {
+#members .team__wrapper .cardMember .member__img img {
   transition: all 0.65s;
   width: 100%;
 }
-#team .team__wrapper .cardMember .member__info {
+#members .team__wrapper .cardMember .member__info {
   margin: 20px 0;
   padding: 0 30px;
   text-align: center;
 }
-#team .team__wrapper .cardMember .member__info .member__nationality {
+#members .team__wrapper .cardMember .member__info .member__nationality {
   font-size: 11.25px;
   color: #b61984;
   font-weight: 600;
   margin-bottom: 7.875px;
 }
-#team .team__wrapper .cardMember .member__info .member__name {
+#members .team__wrapper .cardMember .member__info .member__name {
   font-size: 23.25px;
   color: #181818;
   font-weight: 700;
 }
-#team .team__wrapper .cardMember .member__info .member__desc {
+#members .team__wrapper .cardMember .member__info .member__desc {
   padding: 15px 0;
   font-family: "Robotto", sans-serif;
   font-size: 15px;
   color: #181818;
   font-weight: 400;
 }
-#team .bottom__pattern {
+#members .bottom__pattern {
   position: absolute;
   top: "";
   bottom: 0;
   left: 0;
   right: 0;
 }
-#team .bottom__pattern img {
+#members .bottom__pattern img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#course {
+  padding-top: 60px;
+  position: relative;
+}
+#course .container {
+  max-width: 1000px;
+  padding: 0;
+}
+#course .container .course__img img {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+@media screen and (max-width: 992px) {
+  #course .container .course__img {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+#course .container .course__form {
+  font-family: "Montserrat", sans-serif;
+}
+#course .container .course__form .submit__form {
+  max-width: 500px;
+  padding: 0 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+#course .container .course__form .submit__form .form__title {
+  font-size: 37.5px;
+  color: #181818;
+  font-weight: 700;
+  line-height: 45px;
+}
+#course .container .course__form .submit__form .form__input {
+  margin-top: 50px;
+}
+#course .container .course__form .submit__form .form__input div {
+  position: relative;
+}
+#course .container .course__form .submit__form .form__input div i {
+  position: absolute;
+  top: 15px;
+  left: 28px;
+  line-height: 1;
+  color: #b61984;
+}
+#course .container .course__form .submit__form .form__input div input,
+#course .container .course__form .submit__form .form__input div select {
+  border-radius: 50px;
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+  outline: none;
+  font-family: "Robotto", sans-serif;
+  width: 100%;
+  background: transparent;
+  line-height: 1;
+  display: block;
+  color: inherit;
+  padding: 12px 12px 12px 42px !important;
+  font-size: 12px !important;
+  height: 44.5px;
+  margin-bottom: 15px;
+}
+#course .container .course__form .submit__form .form__input div textarea {
+  font-family: "Robotto", sans-serif;
+  padding: 12px 12px 12px 42px !important;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 12px !important;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+#course .container .course__form .submit__form .form__btn {
+  padding-top: 35px;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 768px) {
+  #course .container .course__form .submit__form .form__btn .btn-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #course .container .course__form .submit__form {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  #course .container .course__form {
+    margin-top: 50px;
+  }
+}
+#course .bottom__pattern {
+  position: absolute;
+  top: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+#course .bottom__pattern img {
   width: 100%;
   height: auto;
   display: block;
