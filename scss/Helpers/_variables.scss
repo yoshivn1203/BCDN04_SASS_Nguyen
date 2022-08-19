@@ -1,16 +1,40 @@
+//color
+$color-main: #181818;
+$color-second: #b61984;
+$color-violet: #dcd1f3;
+$color-white: #ffffff;
+
 //font
 $ff-main: 'Montserrat', sans-serif;
 $fs-main: 13px;
 $fw-main: 600;
 $lh-main: 80px;
-$fs-cta: 13.5px;
-$fw-cta: 500;
-$lh-cta: 1;
 
-//color
-$color-main: #181818;
-$color-sub: #b61984;
-$color-violet: #dcd1f3;
+$fs-btn-1: 13.5px;
+$fs-btn-2: 12px;
+$fw-btn-1: 500;
+$fw-btn-2: 600;
+$lh-btn: 1;
+
+//line spaceing:
+$ls-1: 0.03rem;
+$ls-2: 0.08rem;
+
+//padding
+$pd-1: 12px;
+$pd-2: 23px;
+
+//margin
+$mg-1: 6px;
+
+//border
+$bd-1: 50px;
+
+//box-shadow
+$sha: 0 0 0 3em $color-second inset;
+$sha-hov: 0 0 0 1px $color-second inset;
+$sha-footer: 0 0 0 3em $color-white inset;
+$sha-hov-footer: 0 0 0 1px $color-white inset;
 
 $py-section: 60px 0;
 

@@ -1,5 +1,5 @@
 footer {
-  background-image: url("./../../images/footer_background.jpg");
+  background-image: url('./../../images/footer_background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,13 +10,13 @@ footer {
     padding-bottom: 120px;
     color: white;
     font-size: 13.5px;
-    font-family: "Robotto", sans-serif;
+    font-family: 'Robotto', sans-serif;
     .footer__col {
-      @media screen and (min-width: 1199px){
-        padding: 0 40px;  
+      @media screen and (min-width: 1199px) {
+        padding: 0 40px;
       }
       .footer__title {
-        font-family: "Montserrat", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 23.25px;
         font-weight: 700;
         // color: white;
@@ -75,29 +75,6 @@ footer {
             }
             &:focus {
               border: 1px solid rgba(255, 255, 255, 1);
-            }
-          }
-        }
-        .footer__btn {
-          input {
-            outline: none;
-            border: none;
-            box-shadow: 0 0 0 3em #fff inset;
-            color: #181818;
-            border-radius: 50px;
-            height: 48px;
-            width: 100% !important;
-            line-height: 37.2px;
-            font-family: "Montserrat", Arial, Helvetica, sans-serif;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            background-color: transparent;
-            transition: all 300ms ease;
-            &:hover {
-              box-shadow: 0 0 0 1px #fff inset;
-              color: #fff;
             }
           }
         }

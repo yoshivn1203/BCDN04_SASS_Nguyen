@@ -9,7 +9,7 @@
 //   console.log(scrollY);
 //   if (window.scrollY > 250) {
 //     getEleId("logo").style.display = "none";
-//     // getEle(".logo__mobile img").style.display = "none";
+//     // getEle(".logo__small img").style.display = "none";
 //     document.querySelectorAll(".nav-item").forEach(function (ele) {
 //       ele.classList.add("scrollNavItem");
 //     });
@@ -19,7 +19,7 @@
 //     }
 //   } else {
 //     getEleId("logo").style.display = "block";
-//     // getEle(".logo__mobile img").style.display = "block";
+//     // getEle(".logo__small img").style.display = "block";
 //     document.querySelectorAll(".nav-item").forEach(function (ele) {
 //       ele.classList.remove("scrollNavItem");
 //     });

@@ -1,0 +1,27 @@
+.btn-header {
+  @include styleButton(transparent, $sha, $pd-1, $pd-2, none, $bd-1, $ls-1);
+  @include styleText($fs-btn-1, $color-white, $fw-btn-1);
+  margin: $mg-1;
+  transition: all 300ms ease;
+  &:hover {
+    @include styleButtonHover(transparent, $sha-hov, $color-second, $color-second);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-footer {
+  width: 100% !important;
+  @include styleButton(transparent, $sha-footer, $pd-1, $pd-2, none, $bd-1, $ls-2);
+  @include styleText($fs-btn-2, $color-main, $fw-btn-2);
+  margin: $mg-1;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  transition: all 300ms ease;
+  &:hover {
+    @include styleButtonHover(transparent, $sha-hov-footer, $color-white, $color-white);
+  }
+  &:focus {
+    outline: none;
+  }
+}

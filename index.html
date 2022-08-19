@@ -46,20 +46,18 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
+          data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a id="logo" class="navbar-brand" href="#"
-          ><img src="./images/crest.png" alt=""
-        /></a>
-        <div class="logo__mobile">
+        <a id="logo" class="logo" href="#"><img src="./images/crest.png" alt="" /></a>
+        <div class="logo__small" id="logo__small">
           <img src="./images/crest.png" alt="" />
         </div>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="collapse__content">
             <ul class="navbar-nav">
               <a class="nav-item nav-link" href="#">Home</a>
@@ -68,17 +66,15 @@
               <a class="nav-item nav-link" href="#">Blog</a>
               <a class="nav-item nav-link" href="#">Shop</a>
               <a class="nav-item nav-link" href="#">Elements</a>
-              <div class="nav__info">
-                <div class="cta nav__phone">
-                  <i class="fas fa-phone"></i>
-                  <span>(+1) 555 234-8765</span>
-                </div>
-                <div class="nav__social">
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-youtube"></i>
-                  <i class="fab fa-instagram"></i>
-                </div>
+              <button class="btn-header">
+                <i class="fas fa-phone"></i>
+                <span>(+1) 555 234-8765</span>
+              </button>
+              <div class="social__icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
               </div>
             </ul>
           </div>
@@ -174,9 +170,9 @@
               <div class="footer__email">
                 <input type="email" placeholder="Your email" size="40" />
               </div>
-              <div class="footer__btn">
-                <input type="submit" value="SUBSCRIBE" />
-              </div>
+              <button class="btn-footer">
+                <span>SUBSCRIBE</span>
+              </button>
             </div>
           </div>
         </div>
