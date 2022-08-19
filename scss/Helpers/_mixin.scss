@@ -20,6 +20,19 @@
   color: $color;
 }
 
+@mixin backgroundPattern($top, $bottom) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: 0;
+  right: 0;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 @mixin screenMax($max-screenWidth) {
   @media screen and (max-width: $max-screenWidth) {
     @content;

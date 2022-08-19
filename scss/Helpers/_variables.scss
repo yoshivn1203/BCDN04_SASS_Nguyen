@@ -21,6 +21,7 @@ $ls-1: 0.03rem;
 $ls-2: 0.08rem;
 
 //padding
+$py-section: 60px 0;
 $pd-1: 12px;
 $pd-2: 23px;
 
@@ -35,8 +36,6 @@ $sha: 0 0 0 3em $color-second inset;
 $sha-hov: 0 0 0 1px $color-second inset;
 $sha-footer: 0 0 0 3em $color-white inset;
 $sha-hov-footer: 0 0 0 1px $color-white inset;
-
-$py-section: 60px 0;
 
 //break points
 $breakpoints: (

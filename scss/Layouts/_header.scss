@@ -65,17 +65,17 @@ header {
               transform: scale(1.5);
             }
           }
-        }
-      }
-    }
-    .social__icons {
-      font-weight: 400;
-      .fab {
-        cursor: pointer;
-        margin-left: 10px;
-        transition: all 0.25s;
-        &:hover {
-          color: $color-second;
+          .social__icons {
+            font-weight: 400;
+            .fab {
+              cursor: pointer;
+              margin-left: 10px;
+              transition: all 0.25s;
+              &:hover {
+                color: $color-second;
+              }
+            }
+          }
         }
       }
     }

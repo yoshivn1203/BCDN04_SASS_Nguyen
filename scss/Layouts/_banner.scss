@@ -1,0 +1,28 @@
+#banner {
+  padding: $py-section;
+  position: relative;
+  .top__pattern {
+    @include backgroundPattern(0, '');
+  }
+  .banner__text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    p {
+      @include styleText(16.5px, $color-second, $fw-main);
+      margin-bottom: 8.25px;
+      @include responsive('extra-large-down') {
+        font-size: 14.25px;
+      }
+    }
+    h1 {
+      @include styleText(57px, $color-main, 700);
+      @include responsive('extra-large-down') {
+        font-size: 47px;
+      }
+    }
+  }
+  .bottom__pattern {
+    @include backgroundPattern('', 0);
+  }
+}

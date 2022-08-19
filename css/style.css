@@ -98,15 +98,15 @@ header .navbar .navbar-collapse .collapse__content .navbar-nav .nav-item:hover:a
   visibility: visible;
   transform: scale(1.5);
 }
-header .navbar .social__icons {
+header .navbar .navbar-collapse .collapse__content .navbar-nav .social__icons {
   font-weight: 400;
 }
-header .navbar .social__icons .fab {
+header .navbar .navbar-collapse .collapse__content .navbar-nav .social__icons .fab {
   cursor: pointer;
   margin-left: 10px;
   transition: all 0.25s;
 }
-header .navbar .social__icons .fab:hover {
+header .navbar .navbar-collapse .collapse__content .navbar-nav .social__icons .fab:hover {
   color: #b61984;
 }
 
@@ -182,60 +182,59 @@ header .navbar .social__icons .fab:hover {
   outline: none;
 }
 
-#intro {
-  font-family: "Montserrat", Arial, sans-serif;
+#banner {
   padding: 60px 0;
   position: relative;
 }
-#intro .top__wave {
+#banner .top__pattern {
   position: absolute;
   top: 0;
+  bottom: "";
   left: 0;
   right: 0;
 }
-#intro .top__wave img {
+#banner .top__pattern img {
   width: 100%;
   height: auto;
   display: block;
 }
-#intro .intro__left {
+#banner .banner__text {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
-#intro .intro__left p {
+#banner .banner__text p {
   font-size: 16.5px;
   color: #b61984;
   font-weight: 600;
   margin-bottom: 8.25px;
 }
-@media screen and (max-width: 360px) {
-  #intro .intro__left p {
+@media screen and (max-width: 1199.98px) {
+  #banner .banner__text p {
     font-size: 14.25px;
   }
 }
-#intro .intro__left h1 {
+#banner .banner__text h1 {
   font-size: 57px;
   color: #181818;
   font-weight: 700;
 }
-@media screen and (max-width: 360px) {
-  #intro .intro__left h1 {
-    font-size: 37.5px;
+@media screen and (max-width: 1199.98px) {
+  #banner .banner__text h1 {
+    font-size: 47px;
   }
 }
-#intro .intro__right img {
-  width: 100%;
-}
-#intro .bottom__wave {
+#banner .bottom__pattern {
   position: absolute;
-  right: 0;
-  left: 0;
+  top: "";
   bottom: 0;
-  z-index: -1;
+  left: 0;
+  right: 0;
 }
-#intro .bottom__wave img {
+#banner .bottom__pattern img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 footer {
