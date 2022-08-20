@@ -193,13 +193,13 @@ header .navbar .navbar-collapse .collapse__content .navbar-nav .social__icons .f
 
 @media screen and (max-width: 1199.98px) {
   header {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
   }
   header #logo {
-    display: none;
+    display: none !important;
   }
   header #logo__small {
-    display: block;
+    display: block !important;
   }
   header #navbarSupportedContent .collapse__content {
     display: block;
@@ -274,9 +274,6 @@ header .navbar .navbar-collapse .collapse__content .navbar-nav .social__icons .f
   background-color: #dcd1f3;
   padding-top: 30px;
   position: relative;
-}
-#members .team__wrapper {
-  z-index: 1;
 }
 #members .team__wrapper .cardMember .member__img {
   overflow: hidden;

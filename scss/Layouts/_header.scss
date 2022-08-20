@@ -86,13 +86,13 @@ header {
 
 @include responsive('extra-large-down') {
   header {
-    background-color: $color-white;
+    background-color: $color-white !important;
 
     #logo {
-      display: none;
+      display: none !important;
     }
     #logo__small {
-      display: block;
+      display: block !important;
     }
 
     #navbarSupportedContent {
