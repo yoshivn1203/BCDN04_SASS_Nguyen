@@ -26,6 +26,10 @@ h6 {
   line-height: 1.2;
 }
 
+:root {
+  --animate-delay: 0.25s;
+}
+
 .btn-header {
   background: transparent;
   box-shadow: 0 0 0 3em #b61984 inset;
